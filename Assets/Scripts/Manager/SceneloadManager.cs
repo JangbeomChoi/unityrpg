@@ -24,4 +24,13 @@ public class SceneloadManager : MonoBehaviour
 
     }
 
+    public void ToStart()
+    {
+        SceneloadManager sceneloadManager = FindObjectOfType<SceneloadManager>();
+        if (sceneloadManager != null)
+        {
+            sceneloadManager.Load(SceneloadManager.SceneEnum.StartScene);
+        }
+    }
+
 }
