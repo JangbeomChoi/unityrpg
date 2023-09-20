@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class StartSceneController : MonoBehaviour
 {
+    public GameObject nameInputPanel;
     public TMP_InputField nameInput;
+    public TMP_Text playerNameText;
 
     private void Start()
     {
@@ -17,22 +19,18 @@ public class StartSceneController : MonoBehaviour
         }
     }
 
+    public void ShowNameInputPanel()
+    {
+        nameInputPanel.SetActive(true);
+    }
+
     public void Savename()
     {
         string playerName = nameInput.text;
+
         PlayerPrefs.SetString("PlayerName", playerName);
         PlayerPrefs.Save();
-       
-    }
 
-    //public void StartGame()
-    //{
-    //    SceneloadManager sceneloadManager = FindObjectOfType<SceneloadManager>();
-    //    if(sceneloadManager != null)
-    //    {
-    //        sceneloadManager.Load(SceneloadManager.SceneEnum.MainScene);
-    //    }
-       
-    //}
-    
+        nameInputPanel.SetActive(false);
+    }  
 }
