@@ -4,12 +4,14 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public GameObject statusUIPanel;
+    
     public Button statusButton;
     public Button inventoryButton;
     
-    void Start()
+    public void Start()
     {
         statusButton.onClick.AddListener(ShowStatusUI);
+       
     }
 
     public void ShowStatusUI()
@@ -20,7 +22,6 @@ public class UIManager : MonoBehaviour
         inventoryButton.gameObject.SetActive(false);
 
     }
-
     public void CloseStatusUI()
     {
         statusUIPanel.SetActive(false);
@@ -28,4 +29,5 @@ public class UIManager : MonoBehaviour
         statusButton.gameObject.SetActive(!false);
         inventoryButton.gameObject.SetActive(!false);
     }
+   
 }
