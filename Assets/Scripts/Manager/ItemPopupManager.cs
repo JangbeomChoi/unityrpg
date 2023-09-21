@@ -11,9 +11,9 @@ public class ItemPopupManager : MonoBehaviour
 
     private bool isEquipping = false;
 
-    public void ShowPopup()
+    public void ShowPopup(bool isEquipping)
     {
-        
+        this.isEquipping = isEquipping;
 
         if (isEquipping == true)
         {
