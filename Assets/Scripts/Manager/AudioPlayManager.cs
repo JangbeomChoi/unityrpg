@@ -10,6 +10,10 @@ public class AudioPlayManager : MonoBehaviour
     private void Awake()
     {
         musics = GameObject.FindGameObjectsWithTag("BGM");
+        if(musics.Length>=2)
+        {
+            Destroy(this.gameObject);
+        }
         DontDestroyOnLoad(transform.gameObject);
         audioSource = GetComponent<AudioSource>();
     }
