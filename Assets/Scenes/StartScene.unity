@@ -131,10 +131,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1657092451}
     m_Modifications:
-    - target: {fileID: 871006129593557536, guid: fae2655e27306ca43a2c130bdbda70bf, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 694497328}
     - target: {fileID: 7314273591990176991, guid: fae2655e27306ca43a2c130bdbda70bf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -533,17 +529,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333587199}
   m_CullTransparentMesh: 1
---- !u!114 &694497328 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4463741592962650828, guid: 20e3d45cf3f684f4bb7e130bdbad2929, type: 3}
-  m_PrefabInstance: {fileID: 5620629320692692190}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30938174dbb80be4ab3d417916f54c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &717806037
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +902,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &1085078813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5254400184705318018, guid: fae2655e27306ca43a2c130bdbda70bf, type: 3}
+  m_PrefabInstance: {fileID: 156056816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1140366431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +1947,10 @@ PrefabInstance:
       propertyPath: audioSlider
       value: 
       objectReference: {fileID: 1771560681}
+    - target: {fileID: 4463741592962650828, guid: 20e3d45cf3f684f4bb7e130bdbad2929, type: 3}
+      propertyPath: audioToggle
+      value: 
+      objectReference: {fileID: 1085078813}
     - target: {fileID: 7340543418381818209, guid: 20e3d45cf3f684f4bb7e130bdbad2929, type: 3}
       propertyPath: m_Name
       value: MusicSource
