@@ -8,6 +8,7 @@ public class SceneloadManager : MonoBehaviour
     {
         MainScene,
         StartScene,
+        CreditScene,
     }
     public void Load(SceneEnum nextScene)
     {
@@ -34,6 +35,15 @@ public class SceneloadManager : MonoBehaviour
         if (sceneloadManager != null)
         {
             sceneloadManager.Load(SceneloadManager.SceneEnum.StartScene);
+        }
+    }
+
+    public void ToCredit()
+    {
+        SceneloadManager sceneloadManager = FindObjectOfType<SceneloadManager>();
+        if (sceneloadManager != null)
+        {
+            sceneloadManager.Load(SceneloadManager.SceneEnum.CreditScene);
         }
     }
 

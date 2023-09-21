@@ -11,11 +11,11 @@ public class ItemPopupManager : MonoBehaviour
 
     private bool isEquipping = false;
 
-    public void ShowPopup(bool isEquipping)
+    public void ShowPopup()
     {
-        this.isEquipping = isEquipping;
+        
 
-        if (isEquipping)
+        if (isEquipping == true)
         {
             
             popupText.text = "해제 하시겠습니까?";
